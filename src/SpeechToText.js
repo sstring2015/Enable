@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react'
 import HeadsetMicIcon from '@material-ui/icons/HeadsetMic';
 import StopIcon from '@material-ui/icons/Stop';
 
-
-
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition
 const mic = new SpeechRecognition()
@@ -11,12 +9,6 @@ const mic = new SpeechRecognition()
 mic.continuous = true
 mic.interimResults = true
 mic.lang = 'en-US'
-
-
-
-
-
-
 
 function SpeechToText() {
 

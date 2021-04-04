@@ -1,15 +1,9 @@
-
-import './App.css';
-
 import Header from "./Header";
 import Home from "./Home";
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import CaptionImage from "./CaptionImage";
 import SignLanguage from "./SignLanguage";
 import SpeechToText from "./SpeechToText";
-
-
-
 
 function App() {
   return (
@@ -20,9 +14,7 @@ function App() {
 
       <Header/>
                   <Switch>
-                
-
-                          <Route path="/sign">
+                    <Route path="/sign">
                           
                             <SignLanguage/>
                             
@@ -44,21 +36,10 @@ function App() {
                       
                           <Home/>
 
-
                           </Route>
-                    
-
-                  </Switch>
-
-
-           
+                  </Switch>           
       </div>
       </Router>
-
-
-
-
-
     
   );
 }
